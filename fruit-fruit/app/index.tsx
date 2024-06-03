@@ -1,12 +1,11 @@
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { WebView } from 'react-native-webview';
 
 export default function App() {
-  // return <WebView source={{ uri: "https://duruduru.netlify.app/" }} />;
   return (
-    <>
-      <div> fruit fruit 앱 입니다.</div>
-    </>
+    <View style={styles.container}>
+      <Text style={styles.text}>프룻프룻 입니다.</Text>
+    </View>
   );
 }
 
@@ -16,5 +15,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    fontSize: 20,
+    color: 'green',
   },
 });
